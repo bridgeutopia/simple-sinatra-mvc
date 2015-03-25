@@ -7,7 +7,6 @@
 * HAML
 * SASS
 * PostgreSQL gem (pg)
-* CoffeeScript (coffee-script)
 * Pony
 * Rubocop
 * A lot more
@@ -17,7 +16,6 @@
 $ git clone --depth 1 git://github.com/katgironpe/simple-sinatra-mvc.git myapp
 $ rm -r myapp/.git && rm myapp/README.md
 ```
-
 
 ## Use bundler to install gems
 ``` bash

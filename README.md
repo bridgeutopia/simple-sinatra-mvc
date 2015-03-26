@@ -4,7 +4,7 @@
 
 ## What's included
 * Sprockets
-* HAML
+* Slim
 * SASS
 * PostgreSQL gem (pg)
 * Pony

@@ -36,11 +36,10 @@ $ shotgun config.ru
 
 ## Unit and acceptance tests
 
-Ruby 1.9 includes minitest so it just makes test to use minitest instead of any other framework.
-It works and it is simple. Use:
+Use RSpec for unit tests and functional tests.
 
 ``` bash
-$ rake test
+$ rspec .
 ```
 
 For acceptance tests, some example is also provided. Use:

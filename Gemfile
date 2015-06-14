@@ -17,6 +17,7 @@ gem 'sinatra-flash', '~> 0.3'
 gem 'sinatra-static-assets', '~> 1.0'
 gem 'slim', '~> 3.0'
 gem 'sprockets-helpers', github: 'petebrowne/sprockets-helpers'
+gem 'sprockets-memcache-store', github: 'katgironpe/sprockets-memcache-store'
 gem 'yui-compressor', '~> 0.10'
 
 #optional: just added for README on index.

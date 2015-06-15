@@ -143,7 +143,7 @@ Yes, it is very easy to get asset pipeline working for Sinatra. By default, we h
 You may append more paths as needed by adding directory name to the `assets_paths` array.
 
 ```ruby
-set :assets_paths, %w{fonts images javascripts stylesheets}
+set :assets_paths, %w(fonts images javascripts stylesheets)
 ```
 
 To precompile assets, simply use the rake task for it either on your deployment file or locally:
@@ -167,8 +167,9 @@ To install memcached:
 brew install memcached
 ```
 
+
 ## Performance Monitoring
 
-### Newrelic RPM
+### NewRelic RPM
 
 I found a need to add this all the time. You will just need to download the `newrelic.yml` file.

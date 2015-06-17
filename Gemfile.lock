@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/katgironpe/sprockets-memcache-store.git
-  revision: 5d38be6318ab79dce5f61af96b1f6e6f1c4b8794
+  revision: 32fa36a58ae247d59b9eb838ac5459c20b3f9212
   specs:
     sprockets-memcache-store (0.0.3)
       dalli
@@ -15,14 +15,14 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
-    activemodel (4.2.1)
-      activesupport (= 4.2.1)
+    activemodel (4.2.2)
+      activesupport (= 4.2.2)
       builder (~> 3.1)
-    activerecord (4.2.1)
-      activemodel (= 4.2.1)
-      activesupport (= 4.2.1)
+    activerecord (4.2.2)
+      activemodel (= 4.2.2)
+      activesupport (= 4.2.2)
       arel (~> 6.0)
-    activesupport (4.2.1)
+    activesupport (4.2.2)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -81,7 +81,7 @@ GEM
     i18n (0.7.0)
     json (1.8.3)
     kramdown (1.7.0)
-    listen (2.10.0)
+    listen (2.10.1)
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -118,7 +118,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    rack (1.6.1)
+    rack (1.6.2)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)

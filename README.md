@@ -167,6 +167,12 @@ To install memcached:
 brew install memcached
 ```
 
+On production, you may need to add Memcachier gem if you use the service.
+On most cases you will not need this.
+
+```
+gem 'memcachier'
+```
 
 ## Performance Monitoring
 

@@ -146,6 +146,12 @@ You may append more paths as needed by adding directory name to the `assets_path
 set :assets_paths, %w(fonts images javascripts stylesheets)
 ```
 
+You may change the Asset JS and CSS compressor. If you don't like to use Uglifier, you may remove the gem and update the config.
+
+```ruby
+set :assets_js_compressor, YUI::JavaScriptCompressor.new
+```
+
 To precompile assets, simply use the rake task for it either on your deployment file or locally:
 
 ```bash

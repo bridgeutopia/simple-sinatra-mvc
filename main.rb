@@ -13,7 +13,7 @@ class Main < Sinatra::Base
   set :assets_protocol, :http
   set :assets_paths, %w(fonts images javascripts stylesheets)
   set :assets_css_compressor, YUI::CssCompressor.new
-  set :assets_js_compressor, YUI::JavaScriptCompressor.new
+  set :assets_js_compressor, :uglifier
   set :assets_compress, $env == 'development' ? false : true
 
   register Sinatra::AssetPipeline

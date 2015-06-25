@@ -180,6 +180,20 @@ On most cases you will not need this.
 gem 'memcachier'
 ```
 
+## HTTP Caching
+
+Use `rack-cache` with or without Dalli.
+
+```ruby
+# HTTP Caching
+# dir is the absolute path to cached data directory
+
+use Rack::Cache,
+  verbose: true,
+    metastore: "file:/#{dir}/cached_pages/meta",
+    entitystore: "file:/#{dir}/cached_pages/body"
+```
+
 ## Performance Monitoring
 
 ### NewRelic RPM

@@ -1,4 +1,7 @@
 require 'cucumber/rake/task'
+require 'rspec/core/rake_task'
+
+RSpec::Core::RakeTask.new
 
 Cucumber::Rake::Task.new(:features) do |t|
   t.cucumber_opts = "--format progress"

@@ -31,7 +31,9 @@ group :development do
 end
 
 group :test do
-  gem 'rspec', '~> 3.0'
+  gem 'capybara-webkit'
   gem 'cucumber'
-  gem 'capybara', '~> 2.0'
+  gem 'factory_girl'
+  gem 'rack-test'
+  gem 'rspec', '~> 3.0'
 end

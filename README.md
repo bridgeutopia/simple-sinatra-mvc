@@ -22,7 +22,7 @@ $ rm -r myapp/.git && rm myapp/README.md
 $ bundle install
 ```
 
-## Start the app
+## Start the server
 
 ``` bash
 $ rackup
@@ -126,7 +126,7 @@ The default is development so this should just work:
 $ rake db:migrate
 ```
 
-To start the application, use `shotgun`:
+To start the server, use `shotgun`:
 
 ```bash
 $ bundle exec shotgun config.ru

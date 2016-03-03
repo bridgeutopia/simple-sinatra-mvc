@@ -9,6 +9,7 @@
 * PostgreSQL gem (pg)
 * Pony
 * Rubocop
+* Bootstrap 4.0 (with Flexbox support)
 * A lot more
 
 
@@ -18,8 +19,16 @@ $ rm -r myapp/.git && rm myapp/README.md
 ```
 
 ## Use bundler to install gems
+
 ``` bash
 $ bundle install
+```
+
+## Use bower to install some dependencies
+
+```bash
+$ npm install -g bower
+$ bower install
 ```
 
 ## Start the server
@@ -48,7 +57,7 @@ For acceptance tests, some example is also provided. Use:
 cucumber
 ```
 
-Or use the rake task (`lib/tasks/test.rake`):
+Or use the rake task **lib/tasks/test.rake**:
 
 ```
 rake features
@@ -185,6 +194,7 @@ gem 'memcachier'
 Use `rack-cache` with or without Dalli.
 
 ```ruby
+
 # HTTP Caching
 # dir is the absolute path to cached data directory
 

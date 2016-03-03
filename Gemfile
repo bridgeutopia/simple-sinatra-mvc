@@ -22,12 +22,13 @@ gem 'uglifier', '~> 2.0'
 gem 'yui-compressor', '~> 0.10'
 
 #optional: just added for README on index.
-gem "kramdown"
+gem 'kramdown'
 
 group :development do
+  gem 'better_errors'
   gem 'guard-rubocop'
-  gem 'thin', '~> 1.6'
   gem 'shotgun'
+  gem 'thin', '~> 1.6'
 end
 
 group :test do

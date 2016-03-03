@@ -8,7 +8,6 @@ require 'bundler'
   active_support
   kramdown
   newrelic_rpm
-  padrino-helpers
   pg
   sinatra
   sinatra/asset_pipeline

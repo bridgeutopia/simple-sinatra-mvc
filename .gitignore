@@ -4,4 +4,5 @@ public/assets
 log
 config/database.yml
 .bundle
+bower_components
 Gemfile.lock

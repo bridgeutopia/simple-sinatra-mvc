@@ -209,3 +209,9 @@ use Rack::Cache,
 ### NewRelic RPM
 
 I found a need to add this all the time. You will just need to download the `newrelic.yml` file.
+
+## Pre-deployment
+
+### Review Gitignore file
+
+You likely have to remove some entries on the **.gitignore** file like **config/database.yml** if you are deploying on Heroku or OpenShift.

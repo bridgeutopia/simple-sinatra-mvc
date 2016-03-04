@@ -3,9 +3,9 @@ class Main
     def link_to(url,text=url, opts={})
       attributes = ""
       opts.each { |key,value| attributes << key.to_s << "=\"" << value << "\" "}
-      %Q(<a href="#{url}" #{attributes}>#{text}</a>)
+      %(<a href="#{url}" #{attributes}>#{text}</a>)
     end
   end
-
-  helpers ApplicationHelpers
 end
+
+helpers Main::ApplicationHelpers

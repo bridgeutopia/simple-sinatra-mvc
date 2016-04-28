@@ -48,7 +48,7 @@ $ shotgun config.ru
 Use RSpec for unit tests and functional tests.
 
 ``` bash
-$ rspec .
+$ bundle exec rake spec
 ```
 
 For acceptance tests, some example is also provided. Use:

@@ -12,7 +12,7 @@ gem 'rake', '~> 10.3'
 gem 'sass', '~> 3.0'
 gem 'sinatra', '~> 1.4'
 gem 'sinatra-activerecord', '~> 2.0'
-gem 'sinatra-asset-pipeline', '~> 0.4'
+gem 'sinatra-asset-pipeline', '~> 0.7.0'
 gem 'sinatra-flash', '~> 0.3'
 gem 'sinatra-static-assets', '~> 1.0'
 gem 'slim', '~> 3.0'
@@ -32,7 +32,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara-webkit'
+  gem 'capybara'
   gem 'cucumber'
   gem 'factory_girl'
   gem 'rack-test'

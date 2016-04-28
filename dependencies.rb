@@ -16,7 +16,7 @@ require 'bundler'
   slim
   sprockets
   sprockets-helpers
-  sprockets-memcache-store
+  sprockets/cache/memcache_store
   sprockets-sass
   yui/compressor
 ).each { |d| require d }

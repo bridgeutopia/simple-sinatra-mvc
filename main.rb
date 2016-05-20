@@ -9,7 +9,7 @@ class Main < Sinatra::Base
   sprockets.cache = Sprockets::Cache::MemcacheStore.new
   set :digest_assets, false
   set :assets_precompile, [/^([a-zA-Z0-9_-]+\/)?([a-zA-Z0-9_-]+\/)?(?!_)([a-zA-Z0-9_-]+.\w+)$/]
-  set :assets_prefix, %w(assets bower_components)
+  set :assets_prefix, %w(assets node_modules)
   set :assets_protocol, :http
   set :assets_paths, %w(fonts images javascripts stylesheets)
   set :assets_css_compressor, YUI::CssCompressor.new

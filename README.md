@@ -24,11 +24,11 @@ $ rm -r myapp/.git && rm myapp/README.md
 $ bundle install
 ```
 
-## Use bower to install some dependencies
+## Use npm to install some dependencies.
+### I personally prefer npm over bower for asset management.
 
 ```bash
-$ npm install -g bower
-$ bower install
+$ npm install
 ```
 
 ## Start the server

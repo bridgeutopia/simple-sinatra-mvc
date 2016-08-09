@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
-gem 'activerecord', '~> 4.0'
-gem 'activesupport', '~> 4.0'
+gem 'activerecord', '~> 5.0'
+gem 'activesupport', '~> 5.0'
 gem 'dalli', '~> 2.0'
 gem 'newrelic_rpm', '~> 3.9'
 gem 'padrino-helpers', '~> 0.12'

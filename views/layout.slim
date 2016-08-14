@@ -5,11 +5,7 @@ html
     meta charset='utf-8'
     meta content='all, index, follow' name='robots'
     meta content='Your Name' name='author'
-
-    /[if lte IE 9]
-      = stylesheet_tag '/assets/ie.css'
-    = stylesheet_tag '/assets/style.css'
-    = stylesheet_tag '/assets/print.css', media: 'print'
+    = stylesheet_tag '/assets/stylesheets/app.css'
 
   body
     a href='https://github.com/katgironpe/simple-sinatra-mvc'
@@ -18,4 +14,4 @@ html
       .row
         .col-sm-12.col-xs-12
           == yield
-    = javascript_tag 'application'
+    = javascript_tag '/assets/javascripts/app.js'

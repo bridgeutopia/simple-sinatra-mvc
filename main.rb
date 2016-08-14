@@ -5,18 +5,7 @@ end
 
 class Main < Sinatra::Base
   set :root, File.dirname(__FILE__)
-  set :sprockets, Sprockets::Environment.new(root)
-  sprockets.cache = Sprockets::Cache::MemcacheStore.new
-  set :digest_assets, false
-  set :assets_precompile, [/^([a-zA-Z0-9_-]+\/)?([a-zA-Z0-9_-]+\/)?(?!_)([a-zA-Z0-9_-]+.\w+)$/]
-  set :assets_prefix, %w(assets node_modules)
-  set :assets_protocol, :http
-  set :assets_paths, %w(fonts images javascripts stylesheets)
-  set :assets_css_compressor, YUI::CssCompressor.new
-  set :assets_js_compressor, :uglifier
-  set :assets_compress, $env == 'development' ? false : true
-
-  register Sinatra::AssetPipeline
+  set :public_folder, Proc.new { File.join(root, 'public') }
 
   Slim::Engine.options[:disable_escape] = true
 
@@ -32,17 +21,6 @@ class Main < Sinatra::Base
                                             password: settings.password,
                                             host: settings.host,
                                             database: settings.database)
-
-    assets_paths.each do |path|
-      sprockets.append_path File.join(root, 'app', 'assets', path)
-    end
-
-    Sprockets::Helpers.configure do |config|
-      config.environment = sprockets
-      config.prefix = assets_prefix
-      config.digest = digest_assets
-      config.public_path = public_folder
-    end
   end
 
 

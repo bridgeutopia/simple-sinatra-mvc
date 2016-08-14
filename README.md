@@ -3,7 +3,6 @@
 # Simple Sinatra MVC Template
 
 ## What's included
-* Sprockets
 * Slim
 * SASS
 * PostgreSQL gem (pg)
@@ -168,47 +167,6 @@ rake assets:precompile RACK_ENV=production
 ```
 
 You have to use the asset helpers provided by `sprocket-helpers` gem.
-
-
-## Caching Assets
-
-We use memcached to speed up loading of assets and storing them whether they're compressed or not.
-It is highly recommended to enable this by default in production.
-
-
-To install memcached:
-
-```bash
-brew install memcached
-```
-
-On production, you may need to add Memcachier gem if you use the service.
-On most cases you will not need this.
-
-```
-gem 'memcachier'
-```
-
-## HTTP Caching
-
-Use `rack-cache` with or without Dalli.
-
-```ruby
-
-# HTTP Caching
-# dir is the absolute path to cached data directory
-
-use Rack::Cache,
-  verbose: true,
-    metastore: "file:/#{dir}/cached_pages/meta",
-    entitystore: "file:/#{dir}/cached_pages/body"
-```
-
-## Performance Monitoring
-
-### NewRelic RPM
-
-I found a need to add this all the time. You will just need to download the `newrelic.yml` file.
 
 ## Pre-deployment
 

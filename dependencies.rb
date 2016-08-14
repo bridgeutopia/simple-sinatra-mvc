@@ -7,18 +7,11 @@ require 'bundler'
   active_record
   active_support
   kramdown
-  newrelic_rpm
   pg
   sinatra
-  sinatra/asset_pipeline
   sinatra/flash
   sinatra/static_assets
   slim
-  sprockets
-  sprockets-helpers
-  sprockets/cache/memcache_store
-  sprockets-sass
-  yui/compressor
 ).each { |d| require d }
 
 $env = ENV['RACK_ENV']

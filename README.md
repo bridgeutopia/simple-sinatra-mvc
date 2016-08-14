@@ -9,7 +9,7 @@
 * Pony
 * Rubocop
 * Brunch
-* Bootstrap 4.0 (with Flexbox support)
+* Bourbon, Neat & Bitters for Styles
 * A lot more
 
 

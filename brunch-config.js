@@ -9,9 +9,6 @@ exports.config = {
       order: {
         after: ['app/assets/stylesheets/app.css']
       }
-    },
-    templates: {
-      joinTo: 'javascripts/app.js'
     }
   },
 
@@ -39,19 +36,13 @@ exports.config = {
     sass: {
       options: {
         mode: 'native',
-        includePaths: ['node_modules/bootstrap/scss'],
+        includePaths: ['node_modules/normalize.css', 'node_modules/bourbon/core', 'node_modules/bourbon-neat/app/assets/stylesheets'],
         precision: 8,
-        allowCache: true,
         sourceMapEmbed: true
       }
     }
 
   },
-
-  modules: {
-
-  },
-
   npm: {
     enabled: true
   }

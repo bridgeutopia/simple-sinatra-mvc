@@ -6,7 +6,8 @@
     "watch": "brunch watch --stdin"
   },
   "dependencies": {
-    "bootstrap": "~v4.0.0-alpha.2",
+    "bourbon": "^5.0.0-beta.6",
+    "bourbon-neat": "^1.8.0",
     "copycat-brunch": "^1.1.0",
     "normalize.css": "^4.2.0"
   },

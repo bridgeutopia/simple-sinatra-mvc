@@ -3,7 +3,8 @@
   "engine": "node 6.0.0",
   "scripts": {
     "deploy": "brunch build --production",
-    "watch": "brunch watch --stdin"
+    "watch": "brunch watch --stdin",
+    "assets:clean": "rm -rf public/assets"
   },
   "dependencies": {
     "bourbon": "^5.0.0-beta.6",

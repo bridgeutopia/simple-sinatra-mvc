@@ -55,7 +55,7 @@ or
 $ bundle exec shotgun config.ru
 ```
 
-## Tests
+## Testing
 
 ### Unit tests
 

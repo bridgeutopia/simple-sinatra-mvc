@@ -4,7 +4,7 @@
 
 ## What's included
 * Slim
-* SASS
+* SASS support via NPM
 * PostgreSQL gem (pg)
 * Pony
 * Rubocop
@@ -12,27 +12,38 @@
 * Bourbon, Neat & Bitters for Styles
 * A lot more
 
+## Table of contents
+
+* [Getting Started](#getting-started)
+* [Installation](#installation)
+* [Testing](#testing)
+* [Configuration](#configuration)
+* [Rake Tasks](#rake-tasks)
+* [Asset Pipeline](#asset-pipeline)
+* [Pre-deployment](#pre-deployment)
+
+## Getting Started
 
 ``` bash
 $ git clone --depth 1 git://github.com/katgironpe/simple-sinatra-mvc.git myapp
 $ rm -r myapp/.git && rm myapp/README.md
 ```
 
-## Use bundler to install gems
+## Installation
+
+### Use bundler to install gems
 
 ``` bash
 $ bundle install --no-deployment
 ```
 
-## Use npm to install some dependencies
-
-### I personally prefer npm over bower for asset management
+### Use npm to install some dependencies
 
 ```bash
 $ npm i
 ```
 
-## Start the server
+### Start the server
 
 ``` bash
 $ rackup
@@ -44,13 +55,17 @@ or
 $ bundle exec shotgun config.ru
 ```
 
-## Unit and acceptance tests
+## Tests
+
+### Unit tests
 
 Use **RSpec** for unit tests and functional tests.
 
 ``` bash
 $ bundle exec rake spec
 ```
+
+### Acceptance tests
 
 For acceptance tests, some example is also provided. Use:
 

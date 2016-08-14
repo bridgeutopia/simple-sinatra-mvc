@@ -221,7 +221,7 @@ heroku buildpacks:add heroku/nodejs   # add the Node.js buildpack
 heroku buildpacks:add heroku/ruby     # add the Ruby buildpack
 ```
 
-You generally don't have to worry about building the assets as long you have the same `package.json` on this repository.
+You generally don't have to worry about building the assets as long you have the same `package.json` on this repository. 
+Please read `postinstall`, `watch` and `deploy` scripts.
 
 Other necessary steps: please read **pre-deployment**.
-

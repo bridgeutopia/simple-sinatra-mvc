@@ -20,14 +20,14 @@ $ rm -r myapp/.git && rm myapp/README.md
 ## Use bundler to install gems
 
 ``` bash
-$ bundle install
+$ bundle install --no-deployment
 ```
 
 ## Use npm to install some dependencies.
 ### I personally prefer npm over bower for asset management.
 
 ```bash
-$ npm install
+$ npm i
 ```
 
 ## Start the server
@@ -39,7 +39,7 @@ $ rackup
 or
 
 ``` bash
-$ shotgun config.ru
+$ bundle exec shotgun config.ru
 ```
 
 ## Unit and acceptance tests
@@ -142,31 +142,20 @@ $ bundle exec shotgun config.ru
 
 ## Asset Pipeline
 
-Yes, it is very easy to get asset pipeline working for Sinatra. By default, we have the following supported directories:
+**Update: I have decided to replace Sprockets with Brunch. Reasons include performance improvements, ease of use and flexibility.**
+
+By default, we have the following supported directories:
 
 * app/assets/javascripts
 * app/assets/stylesheets
-* app/assets/images
+* app/assets/files
 
-You may append more paths as needed by adding directory name to the `assets_paths` array.
+Your non-JavaScript and non-CSS files should go to `app/assets/files` directory.
 
-```ruby
-set :assets_paths, %w(fonts images javascripts stylesheets)
-```
+I may work on another template that uses `Sprockets 4`.
 
-You may change the Asset JS and CSS compressor. If you don't like to use Uglifier, you may remove the gem and update the config.
+### Configuring Brunch
 
-```ruby
-set :assets_js_compressor, YUI::JavaScriptCompressor.new
-```
-
-To precompile assets, simply use the rake task for it either on your deployment file or locally:
-
-```bash
-rake assets:precompile RACK_ENV=production
-```
-
-You have to use the asset helpers provided by `sprocket-helpers` gem.
 
 ## Pre-deployment
 

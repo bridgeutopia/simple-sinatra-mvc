@@ -8,6 +8,7 @@
 * PostgreSQL gem (pg)
 * Pony
 * Rubocop
+* Brunch
 * Bootstrap 4.0 (with Flexbox support)
 * A lot more
 
@@ -23,8 +24,9 @@ $ rm -r myapp/.git && rm myapp/README.md
 $ bundle install --no-deployment
 ```
 
-## Use npm to install some dependencies.
-### I personally prefer npm over bower for asset management.
+## Use npm to install some dependencies
+
+### I personally prefer npm over bower for asset management
 
 ```bash
 $ npm i
@@ -44,7 +46,7 @@ $ bundle exec shotgun config.ru
 
 ## Unit and acceptance tests
 
-Use RSpec for unit tests and functional tests.
+Use **RSpec** for unit tests and functional tests.
 
 ``` bash
 $ bundle exec rake spec
@@ -154,8 +156,13 @@ Your non-JavaScript and non-CSS files should go to `app/assets/files` directory.
 
 I may work on another template that uses `Sprockets 4`.
 
+### Why Brunch?
+
+Brunch is great for most projects. It is currently the de facto choice for Phoenix developers.
+
 ### Configuring Brunch
 
+Please take some time to read the [documentation](http://brunch.io/#documentation) before updating `brunch-config.js`.
 
 ## Pre-deployment
 

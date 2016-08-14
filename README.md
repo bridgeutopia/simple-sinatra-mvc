@@ -3,6 +3,7 @@
 # Simple Sinatra MVC Template
 
 ## What's included
+
 * Slim
 * SASS support via NPM
 * PostgreSQL gem (pg)
@@ -21,6 +22,8 @@
 * [Rake Tasks](#rake-tasks)
 * [Asset Pipeline](#asset-pipeline)
 * [Pre-deployment](#pre-deployment)
+* [Deployment Guides](#deployment-guides)
+
 
 ## Getting Started
 
@@ -85,7 +88,7 @@ rake features
 $ cp config/database.yml.example config/database.yml
 ```
 
-Update database.yml
+Update `database.yml`.
 
 
 By default, we use PostgreSQL.
@@ -197,3 +200,28 @@ Please take some time to read the [documentation](http://brunch.io/#documentatio
 ### Review Gitignore file
 
 You likely have to remove some entries on the **.gitignore** file like **config/database.yml** if you are deploying on Heroku or OpenShift.
+
+## Deployment Guides
+
+Deployment to Heroku and OpenShift should fairly be easy. We rely on `postinstall` on `package.json` to build the assets. Regardless of where you deploy your app, you need the following installed:
+
+1. Node.js
+2. Latest stable Ruby version
+
+The command `npm install` or `npm i` will install Node.js packages and build the assets using `brunch`.
+
+### Heroku
+
+Deploying a Sinatra or Ruby on Rails application on Heroku requires some **buildpacks**.
+
+```
+heroku buildpacks                     # view current buildpacks
+heroku buildpacks:clear               # clear current buildpacks, if necessary
+heroku buildpacks:add heroku/nodejs   # add the Node.js buildpack
+heroku buildpacks:add heroku/ruby     # add the Ruby buildpack
+```
+
+You generally don't have to worry about building the assets as long you have the same `package.json` on this repository.
+
+Other necessary steps: please read **pre-deployment**.
+

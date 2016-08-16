@@ -10,11 +10,11 @@
   "dependencies": {
     "bourbon": "^5.0.0-beta.6",
     "bourbon-neat": "^1.8.0",
-    "copycat-brunch": "^1.1.0",
     "normalize.css": "^4.2.0"
   },
   "devDependencies": {
     "babel-brunch": "^6.0.5",
+    "copycat-brunch": "^1.1.0",
     "brunch": "^2.8.2",
     "clean-css-brunch": "^2.0.0",
     "css-brunch": "^2.6.1",

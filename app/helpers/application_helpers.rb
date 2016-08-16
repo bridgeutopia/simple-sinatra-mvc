@@ -1,8 +1,10 @@
 class Main
   module ApplicationHelpers
-    def link_to(url,text=url, opts={})
-      attributes = ""
-      opts.each { |key,value| attributes << key.to_s << "=\"" << value << "\" "}
+    def link_to(text, url, opts = {})
+      attributes = ''
+      opts.each do |k, v|
+        attributes << k.to_s << "=\"" << v << "\" " if k && v
+      end
       %(<a href="#{url}" #{attributes}>#{text}</a>)
     end
   end

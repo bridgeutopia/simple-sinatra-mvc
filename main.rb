@@ -24,7 +24,7 @@ class Main < Sinatra::Base
   end
 
 
-  (Dir['./app/helpers/*.rb'].sort + Dir['./app/concerns/*.rb'].sort + Dir['./app/models/*.rb'].sort  + Dir['./app/controllers/*/*.rb'].sort).each do |file|
+  (Dir['./app/helpers/*.rb'].sort + Dir['./app/models/**/*.rb'].sort  + Dir['./app/controllers/*/*.rb'].sort).each do |file|
     require file
   end
 end

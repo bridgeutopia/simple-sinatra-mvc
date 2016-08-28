@@ -7,3 +7,4 @@ config/database.yml
 bower_components
 node_modules
 Gemfile.lock
+npm-*

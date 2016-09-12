@@ -9,7 +9,7 @@ class Main < Sinatra::Base
 
   Slim::Engine.options[:disable_escape] = true
 
-  YAML::load(File.open('config/database.yml'))[$env].each do |key, value|
+  YAML.load(ERB.new(File.read('./config/database.yml')).result)[$env].each do |key, value|
     set key, value
   end
 

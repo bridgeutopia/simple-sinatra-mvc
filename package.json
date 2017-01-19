@@ -15,7 +15,7 @@
   "devDependencies": {
     "babel-brunch": "^6.0.5",
     "copycat-brunch": "^1.1.0",
-    "brunch": "^2.8.2",
+    "brunch": "^2.10.2",
     "clean-css-brunch": "^2.0.0",
     "css-brunch": "^2.6.1",
     "javascript-brunch": "^2.0.0",

@@ -13,7 +13,7 @@
     "normalize.css": "^5.0.0"
   },
   "devDependencies": {
-    "babel-brunch": "^6.0.5",
+    "babel-brunch": "^6.1.1",
     "copycat-brunch": "^1.1.0",
     "brunch": "^2.8.2",
     "clean-css-brunch": "^2.0.0",

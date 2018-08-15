@@ -8,18 +8,9 @@
     "postinstall": "npm run deploy"
   },
   "dependencies": {
-    "bourbon": "^5.0.0-beta.6",
-    "bourbon-neat": "^1.8.0",
-    "normalize.css": "^5.0.0"
+    "bourbon": "^5.1.0",
+    "bourbon-neat": "^3.0.0",
+    "normalize.css": "^8.0.0"
   },
-  "devDependencies": {
-    "babel-brunch": "^6.0.5",
-    "copycat-brunch": "^1.1.0",
-    "brunch": "^2.8.2",
-    "clean-css-brunch": "^2.0.0",
-    "css-brunch": "^2.6.1",
-    "javascript-brunch": "^2.0.0",
-    "sass-brunch": "^2.6.3",
-    "uglify-js-brunch": "^2.0.1"
-  }
+  "devDependencies": {}
 }

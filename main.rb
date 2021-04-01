@@ -1,4 +1,3 @@
-require './dependencies'
 (Dir['./lib/*.rb'].sort).each do |file|
   load file
 end

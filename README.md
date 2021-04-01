@@ -187,7 +187,6 @@ By default, we have the following supported directories:
 
 Your non-JavaScript and non-CSS files should go to `app/assets/files` directory.
 
-I may work on another template that uses `Sprockets 4`.
 
 ### Why Brunch?
 

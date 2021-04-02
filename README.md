@@ -107,7 +107,7 @@ $ createdb database_name
 
 Normally, you already have a `postgres` user with a blank password. Otherwise, please refer to the PostgreSQL documentation and create a new user.
 
-You may have to update `config.ru` and files on config directory as needed.
+You may have to update `config.ru` and files on `config` directory as needed.
 
 ## Rake Tasks
 

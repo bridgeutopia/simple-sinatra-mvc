@@ -28,7 +28,7 @@
 ## Getting Started
 
 ``` bash
-$ git clone --depth 1 git://github.com/katgironpe/simple-sinatra-mvc.git myapp
+$ git clone --depth 1 git://github.com/kathgironpe/simple-sinatra-mvc.git myapp
 $ rm -r myapp/.git && rm myapp/README.md
 ```
 

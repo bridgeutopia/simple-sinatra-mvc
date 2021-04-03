@@ -51,12 +51,6 @@ $ npm i
 $ rackup
 ```
 
-or
-
-``` bash
-$ bundle exec shotgun config.ru
-```
-
 ## Testing
 
 ### Unit tests
@@ -176,10 +170,10 @@ The default is development so this should just work:
 $ rake db:migrate
 ```
 
-To start the server, use **shotgun**:
+To start the server, use **rackup**:
 
 ```bash
-$ bundle exec shotgun config.ru
+$ rackup
 ```
 
 ## Asset Pipeline

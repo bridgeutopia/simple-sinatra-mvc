@@ -20,7 +20,6 @@ gem 'kramdown'
 group :development do
   gem 'better_errors'
   gem 'guard-rubocop'
-  gem 'shotgun'
   gem 'thin', '~> 1.6'
 end
 

@@ -9,8 +9,9 @@
 * PostgreSQL gem (pg)
 * Pony
 * Rubocop
-* Brunch
-* Bourbon, Neat & Bitters for Styles
+* Webpack
+* Tailwind CSS
+* TypeScript
 * A lot more
 
 ## Table of contents

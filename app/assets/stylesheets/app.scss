@@ -1,3 +1,31 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer base {
+  h1, h2, h3, h4, h5 {
+    @apply leading-10;
+    @apply my-10;
+  }
+
+  a {
+    @apply text-red-700;
+  }
+
+  pre, code {
+    @apply text-gray-600;
+    @apply bg-gray-50;
+    @apply rounded-md;
+    @apply p-10;
+    @apply my-10;
+    @apply block;
+    @apply whitespace-pre-wrap;
+  }
+
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}

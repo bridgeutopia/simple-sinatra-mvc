@@ -1,16 +1,14 @@
-[![Dependency Status](https://gemnasium.com/katgironpe/simple-sinatra-mvc.svg)](https://gemnasium.com/katgironpe/simple-sinatra-mvc)
-
 # Simple Sinatra MVC Template
 
 ## What's included
 
-* Slim
+* <a href="http://slim-lang.com/" target="_blank">Slim</a>
 * SASS support via NPM
 * PostgreSQL gem (pg)
 * Pony
 * Rubocop
-* Webpack
-* Tailwind CSS
+* <a href="https://webpack.js.org/" target="_blank">Webpack</a>
+* <a href="https://tailwindcss.com/docs/configuration" target="_blank">Tailwind CSS</a>
 * TypeScript
 * A lot more
 
@@ -106,9 +104,9 @@ Creating a database should be as simple as:
 $ createdb database_name
 ```
 
-Normally, you already have a `postgres` user with a blank password. Otherwise, please refer to the PostgreSQL documentation and create a new user.
+Normally, you already have a **postgres** user with a blank password. Otherwise, please refer to the PostgreSQL documentation and create a new user.
 
-You may have to update `config.ru` and files on `config` directory as needed.
+You may have to update **config.ru** and files on **config** directory as needed.
 
 ## Rake Tasks
 
@@ -116,7 +114,9 @@ You may have to update `config.ru` and files on `config` directory as needed.
 $ rake -T
 ```
 
-```ruby
+This returns this output:
+
+```bash
 rake db:create              # Creates the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:create:all to create all databases in the config). Without R...
 rake db:create_migration    # Create a migration (parameters: NAME, VERSION)
 rake db:drop                # Drops the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:drop:all to drop all databases in the config). Without RAILS_E...
@@ -136,6 +136,7 @@ rake db:structure:load      # Recreates the databases from the structure.sql fil
 rake db:version             # Retrieves the current schema version number
 rake features               # Run Cucumber features
 rake spec                   # Run RSpec code examples
+</code>
 ```
 
 To create a database for a specific environment, do:
@@ -170,7 +171,7 @@ The default is development so this should just work:
 $ rake db:migrate
 ```
 
-To start the server, use `shotgun`:
+To start the server, use **shotgun**:
 
 ```bash
 $ bundle exec shotgun config.ru
@@ -197,7 +198,7 @@ Used and trusted by a lot. The documentation is very clear.
 
 ### Configuring Webpack
 
-Please take some time to read the [documentation](https://webpack.js.org/) before updating `webpack.config.js`.
+Please take some time to read the [documentation](https://webpack.js.org/) before updating **webpack.config.js**.
 
 ## Pre-deployment
 
@@ -207,12 +208,12 @@ You likely have to remove some entries on the **.gitignore** file like **config/
 
 ## Deployment Guides
 
-Deployment to Heroku and OpenShift should fairly be easy. We rely on `postinstall` on `package.json` to build the assets. Regardless of where you deploy your app, you need the following installed:
+Deployment to Heroku and OpenShift should fairly be easy. We rely on **postinstall** on **package.json** to build the assets. Regardless of where you deploy your app, you need the following installed:
 
 1. Node.js
 2. Latest stable Ruby version
 
-The command `npm install` or `npm i` will install Node.js packages and build the assets using `brunch`.
+The command **npm install** or **npm i** will install Node.js packages and build the assets using **brunch**.
 
 ### Heroku
 
@@ -226,6 +227,6 @@ heroku buildpacks:add heroku/ruby     # add the Ruby buildpack
 ```
 
 You generally don't have to worry about building the assets as long you have the same `package.json` on this repository.
-Please read `postinstall`, `watch` and `deploy` scripts.
+Please read **build**, **postinstall**, and **deploy** scripts.
 
 Other necessary steps: please read **pre-deployment**.

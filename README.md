@@ -1,16 +1,14 @@
-[![Dependency Status](https://gemnasium.com/katgironpe/simple-sinatra-mvc.svg)](https://gemnasium.com/katgironpe/simple-sinatra-mvc)
-
 # Simple Sinatra MVC Template
 
 ## What's included
 
-* Slim
+* <a href="http://slim-lang.com/" target="_blank">Slim</a>
 * SASS support via NPM
 * PostgreSQL gem (pg)
 * Pony
 * Rubocop
-* Webpack
-* Tailwind CSS
+* <a href="https://webpack.js.org/" target="_blank">Webpack</a>
+* <a href="https://tailwindcss.com/docs/configuration" target="_blank">Tailwind CSS</a>
 * TypeScript
 * A lot more
 

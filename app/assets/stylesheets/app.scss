@@ -1,14 +1,3 @@
-// Normalize.css
-@import 'normalize.css';
-
-// Bourbon
-@import 'bourbon';
-
-// Bitters
-@import 'base/base';
-
-// Layout
-@import 'neat-helpers';
-@import 'layouts/grid-settings';
-@import 'neat';
-@import 'layouts/layout';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

@@ -9,8 +9,9 @@
 * PostgreSQL gem (pg)
 * Pony
 * Rubocop
-* Brunch
-* Bourbon, Neat & Bitters for Styles
+* Webpack
+* Tailwind CSS
+* TypeScript
 * A lot more
 
 ## Table of contents
@@ -177,7 +178,9 @@ $ bundle exec shotgun config.ru
 
 ## Asset Pipeline
 
-**Update: I have decided to replace Sprockets with Brunch. Reasons include performance improvements, ease of use and flexibility.**
+As a 7-year-old project as of April 2021, I have changed my mind many times about asset management.
+From Sprockets to Brunch.js and now Webpack.js, the changes are largely based on experience and community support.
+Using Webpack makes sense for asset management. Currently, even Ruby on Rails uses this.
 
 By default, we have the following supported directories:
 
@@ -188,13 +191,13 @@ By default, we have the following supported directories:
 Your non-JavaScript and non-CSS files should go to `app/assets/files` directory.
 
 
-### Why Brunch?
+### Why Webpack?
 
-Brunch is great for most projects. It is currently the de facto choice for Phoenix developers.
+Used and trusted by a lot. The documentation is very clear.
 
-### Configuring Brunch
+### Configuring Webpack
 
-Please take some time to read the [documentation](http://brunch.io/#documentation) before updating `brunch-config.js`.
+Please take some time to read the [documentation](https://webpack.js.org/) before updating `webpack.config.js`.
 
 ## Pre-deployment
 
@@ -222,7 +225,7 @@ heroku buildpacks:add heroku/nodejs   # add the Node.js buildpack
 heroku buildpacks:add heroku/ruby     # add the Ruby buildpack
 ```
 
-You generally don't have to worry about building the assets as long you have the same `package.json` on this repository. 
+You generally don't have to worry about building the assets as long you have the same `package.json` on this repository.
 Please read `postinstall`, `watch` and `deploy` scripts.
 
 Other necessary steps: please read **pre-deployment**.

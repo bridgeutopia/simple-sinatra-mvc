@@ -4,7 +4,8 @@
     "build:dev": "webpack --config webpack.config.js --mode development",
     "build:css": "postcss app/assets/stylesheets/app.scss -o public/assets/stylesheets/app.css",
     "deploy": "npm run build & npm run build:css",
-    "assets:clean": "rm -rf public/assets"
+    "assets:clean": "rm -rf public/assets",
+    "postinstall": "npm run deploy"
   },
   "devDependencies": {
     "@babel/core": "^7.13.14",

@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "webpack --config webpack.config.js --mode production",
-    "dev": "webpack --config webpack.config.js --mode development",
+    "build:dev": "webpack --config webpack.config.js --mode development",
     "deploy": "npm run build",
     "assets:clean": "rm -rf public/assets"
   },

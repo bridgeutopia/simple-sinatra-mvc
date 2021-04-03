@@ -2,14 +2,14 @@
 
 ## What's included
 
-* <a href="http://slim-lang.com/" target="_blank">Slim</a>
+* [Slim](http://slim-lang.com/)
 * SASS support via NPM
 * PostgreSQL gem (pg)
 * Pony
 * Rubocop
-* <a href="https://webpack.js.org/" target="_blank">Webpack</a>
-* <a href="https://tailwindcss.com/docs/configuration" target="_blank">Tailwind CSS</a>
-* TypeScript
+* [Webpack](https://webpack.js.org/)
+* [Tailwind CSS](https://tailwindcss.com/docs/configuration)
+* [TypeScript](https://www.typescriptlang.org/)
 * A lot more
 
 ## Table of contents
